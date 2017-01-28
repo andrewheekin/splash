@@ -14,6 +14,14 @@ img.logo {width:97px; height:46px; display:block; margin: -18px 0px 0px -35px;
 img.logo:hover {animation:open 1s; -moz-animation:open 1s; -webkit-animation:open 1s; -o-animation:open 1s;
   -ms-transform: rotate(30deg); -webkit-transform: rotate(30deg); transform: rotate(30deg);}
 
+/*larger scissors*/
+/*img.logo {width:80px; height:auto; display:block; margin: -20px 0px 0px -30px;
+  -ms-transform: rotate(22deg); -webkit-transform: rotate(22deg); transform: rotate(22deg);}*/
+
+/*smaller scissors*/
+/*img.logo {width:108px; height:44px; display:block; margin: -18px 0px 0px -35px;
+  -ms-transform: rotate(17deg); -webkit-transform: rotate(17deg); transform: rotate(17deg);}*/    
+
 h3.learn-more {display:inline-block; float:right; margin-right:12%; margin-top:55px; border:1px solid lightgrey;
   border-radius:2px; padding:14px 31px; font-size:1.4em;}
 h3.learn-more:hover {background:#eee;}
@@ -36,14 +44,14 @@ button.email-button:hover {background:lightgrey;}
 button.email-button:focus {outline:none;}
 button.email-button:active {background:#ccc;}
 
+.demo-line {height:1000px; padding:4em 0em;}
 
-/*larger scissors*/
-/*img.logo {width:80px; height:auto; display:block; margin: -20px 0px 0px -30px;
-  -ms-transform: rotate(22deg); -webkit-transform: rotate(22deg); transform: rotate(22deg);}*/
+.clipp {height:120px; width:200px; position:fixed; bottom:0; right:10%; border:1px solid lightgrey; margin-bottom:15px;
+  background:#eee; box-shadow:0 0 30px 0 lightgrey;}
 
-/*smaller scissors*/
-/*img.logo {width:108px; height:44px; display:block; margin: -18px 0px 0px -35px;
-  -ms-transform: rotate(17deg); -webkit-transform: rotate(17deg); transform: rotate(17deg);}*/  
+
+
+/*ANIMATION*/
 
 /*fadein*/
 @keyframes fadein {from {opacity:0;} to {opacity:1;}}
