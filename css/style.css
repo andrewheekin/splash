@@ -1,10 +1,11 @@
-body {font-family:'Josefin Sans', sans-serif;
+body {font-family:'Josefin Sans', sans-serif; -webkit-user-select:none; -moz-user-select:none; user-select:none; 
   animation:fadein 1s; -moz-animation:fadein 1s; -webkit-animation:fadein 1s; -o-animation:fadein 1s;}
 
-.top-content {height:200px;}
+.top-content {height:160px;}
 
 /*logo*/
-h2.logo {font-size:3em; margin:55px 0px 0px 12%; display:inline-block;}
+h2.logo {font-size:3em; margin:55px 0px 0px 12%; display:inline-block;
+  animation:slideleft 1s; -moz-animation:slideleft 1s; -webkit-animation:slideleft 1s; -o-animation:slideleft 1s; animation-fill-mode:forwards; /*makes the object keep the new position*/}
 
 /*medium scissors*/
 img.logo {width:97px; height:46px; display:block; margin: -18px 0px 0px -35px;
@@ -31,7 +32,8 @@ h3.learn-more:hover {background:#eee;
 h3.middle-content {animation:fadein 2s; -moz-animation:fadein 2s; -webkit-animation:fadein 2s; -o-animation:fadein 2s;}
 
 h1.tagline {text-align:center; font-size:4.5em; font-family:'Raleway', sans-serif; /*text-shadow:0px 0px 1px grey;*/
-  line-height:1.3em}
+  line-height:1.3em;
+  animation:slidedown 1s; -moz-animation:slidedown 1s; -webkit-animation:slidedown 1s; -o-animation:slidedown 1s; animation-fill-mode:forwards; /*makes the object keep the new position*/}
 
 h3.description {color:grey; text-align:center; margin:4%;}
 
@@ -55,13 +57,25 @@ button.email-button:active {background:#ccc;}
 
 
 
-/*ANIMATION*/
+/*ANIMATIONS*/
 
 /*fadein*/
 @keyframes fadein {from {opacity:0;} to {opacity:1;}}
 @-moz-keyframes fadein {from {opacity:0;} to {opacity:1;}} /*Firefox*/
 @-webkit-keyframes fadein {from {opacity:0;} to {opacity:1;}}  /* Safari and Chrome */
 @-o-keyframes fadein {from {opacity:0;} to {opacity:1;}} /* Opera */
+
+/*slide in*/
+@keyframes slidedown {from {transform:translateY(-30px);} to {transform:translateY(0);}}
+@-moz-keyframes slidedown {from {transform:translateY(-30px);} to {transform:translateY(0);}}
+@-webkit-keyframes slidedown {from {transform:translateY(-30px);} to {transform:translateY(0);}}
+@-o-keyframes slidedown {from {transform:translateY(-30px);} to {transform:translateY(0);}}
+
+/*slide left*/
+@keyframes slideleft {from {transform:translateX(15px);} to {transform:translateX(0);}}
+@-moz-keyframes slideleft {from {transform:translateX(15px);} to {transform:translateX(0);}}
+@-webkit-keyframes slideleft {from {transform:translateX(15px);} to {transform:translateX(0);}}
+@-o-keyframes slideleft {from {transform:translateX(15px);} to {transform:translateX(0);}}
 
 /*scissor twist*/
 @keyframes twist {from {transform:rotate(30deg);} to {transform:rotate(18deg);}}
