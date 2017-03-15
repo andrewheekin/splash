@@ -1,6 +1,6 @@
 
 // lines array
-var lines = [
+let lines = [
   // 'border-color:green; transform:rotate(100deg); width:1500px; left:39%;',
   // 'border-color:red; transform:rotate(18deg); width:1500px;',
   // 'border-color:blue; transform:rotate(45deg); width:1500px; right:30%;',
@@ -18,7 +18,7 @@ linesFromArray(lines);
 
 
 function drawLine(str) {
-  var hr = document.createElement('hr')
+  let hr = document.createElement('hr')
   hr.style = str + 'opacity:0.1; position:absolute; border-style:dashed; border-width:5px;';
   document.body.getElementsByClassName('top-content')[0].appendChild(hr);
 }
