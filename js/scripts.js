@@ -1,5 +1,7 @@
 'use strict';
 
+import './dotted-lines.js';
+
 let input = (() => {
   // DOM Objects
   let emailBtn = document.getElementById('email-button');
